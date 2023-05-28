@@ -5,26 +5,10 @@
   <title> Animal with people </title>
   <style>
 	</style>
+<script>
+	var Q1=[0,0,0];
+	var Q2=[0,0,0];
 </head>
 <body>
-<input type="range" min="0" max="100" list="temperatures" id="temperatureInput">
-<datalist id="temperatures">
-  <option value="10" label="Low">
-  <option value="50" label="Medium">
-  <option value="90" label="High">
-</datalist>
-
-<p id="selectedValue"></p>
-
-<script>
-  var temperatureInput = document.getElementById('temperatureInput');
-  var selectedValueElement = document.getElementById('selectedValue');
-
-  temperatureInput.addEventListener('input', function() {
-    var selectedValue = temperatureInput.value;
-    selectedValueElement.textContent = '사용자가 선택한 값: ' + selectedValue;
-  });
-</script>
-
 </body>
 </html>
