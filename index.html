@@ -8,12 +8,27 @@
     
 </head>
 <body>
-	<input type="range" min="0" max="100"  list="temperatures">  
-	<data list id="temperatures">  
-		<option value= "10" label="Low">  
-		<option value="50"label="Medium">  
-		<option value="90"label="High">  
-		</datalist>
+	<input type="range" min="0" max="100" list="temperatures" id="temperatureInput">
+<datalist id="temperatures">
+  <option value="10" label="Low">
+  <option value="50" label="Medium">
+  <option value="90" label="High">
+</datalist>
+
+<script>
+  var temperatureInput = document.getElementById('temperatureInput');
+
+  temperatureInput.addEventListener('input', function() {
+    var selectedValue = temperatureInput.value;
+    processTemperature(selectedValue);
+  });
+
+  function processTemperature(value) {
+    console.log('사용자가 선택한 값:', value);
+    // 선택한 값을 원하는 대로 처리하거나 다른 작업을 수행합니다.
+  }
+</script>
+
 	<div>
 		//<img src="background.jpg" width=100% height=100%> 안녕하세요.
 	</div>
