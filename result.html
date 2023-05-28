@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>결과 페이지</title>
+</head>
+<body>
+  <h1>결과 페이지</h1>
+c
+  <script>
+    // URL의 쿼리 문자열 파싱
+    var urlParams = new URLSearchParams(window.location.search);
+
+    // 선택된 옵션을 가져옴
+    var question1 = urlParams.get('question1');
+    var question2 = urlParams.get('question2');
+    var question3 = urlParams.get('question3');
+
+    // 선택된 옵션을 기반으로 다른 HTML 페이지 띄우기
+    if (question1 && question2 && question3) {
+      var key = question1 + '-' + question2 + '-' + question3;
+      var pageMappings = {
+        'option1-option1-option1': 'page1.html',
+        'option1-option1-option2': 'page2.html',
+        'option1-option1-option3': 'page3.html',
+        'option1-option2-option1': 'page4.html',
+        'option1-option2-option2': 'page5.html',
+        'option1-option2-option3': 'page6.html',
+        'option1-option3-option1': 'page7.html',
+        'option1-option3-option2': 'page8.html',
+        'option1-option3-option3': 'page9.html',
+        'option2-option1-option1': 'page10.html',
+        'option2-option1-option2': 'page11.html',
+        'option2-option1-option3': 'page12.html',
+        'option2-option2-option1': 'page13.html',
+        'option2-option2-option2': 'page14.html',
+        'option2-option2-option3': 'page15.html',
+        'option2-option3-option1': 'page16.html',
+        'option2-option3-option2': 'page17.html',
+        'option2-option3-option3': 'page18.html',
+        'option3-option1-option1': 'page19.html',
+        'option3-option1-option2': 'page20.html',
+        'option3-option1-option3': 'page21.html',
+        'option3-option2-option1': 'page22.html',
+        'option3-option2-option2': 'page23.html',
+        'option3-option2-option3': 'page24.html',
+        'option3-option3-option1': 'page25.html',
+        'option3-option3-option2': 'page26.html',
+        'option3-option3-option3': 'page27.html'
+      };
+
+      var targetPage = pageMappings[key];
+
+      if (targetPage) {
+        // 선택된 옵션에 따른 페이지로 이동
+        window.location.href = targetPage;
+      } else {
+        // 일치하는 페이지가 없을 경우 기본 페이지로 이동
+        window.location.href = 'default.html';
+      }
+    } else {
+      // 모든 문제의 옵션을 선택하지 않은 경우
+      alert('모든 문제의 옵션을 선택해주세요.');
+      // 이전 페이지로 되돌아감
+      window.history.back();
+    }
+  </script>
+</body>
+</html>
