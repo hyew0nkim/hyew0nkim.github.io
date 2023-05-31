@@ -4,27 +4,32 @@
     <title>시작 페이지.html</title>
     <style>
         body {
-        box-sizing: border-box;
-        margin: 0px;
+        padding: 0;
+        margin: 0;
         font-family: Consolas, monospace;
       }
-        .jb-container {
-        height: 100%;
-        width: 100%;
-        background-image: linear-gradient(to bottom, #F5A9D0, #F8E0EC)
+        .container {
+        height: 100vh;
+        background: linear-gradient(to bottom, #F5A9D0, #F8E0EC );
+    
         display: flex;
         justify-content: center;
         align-items: center;
       }
-      .jb-item {
-        padding: 20px;
+      .button {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
         background-color: #ffffff;
       }
     </style>
 </head>
 <body>
-    <div class="jb-container">
-    <button type="button" class="jb-item" onclick="redirectToAaa()">당신에게 맞는 반려 동물을 알아 보세요.</button>
+    <div class="container">
+    <button class="button" onclick="redirectToAaa()">당신에게 맞는 반려 동물을 알아 보세요.</button>
     </div>
     <script>
         function redirectToAaa() {
