@@ -2,10 +2,28 @@
 <html>
 <head>
     <title>시작 페이지.html</title>
+    <style>
+        body {
+        box-sizing: border-box;
+        margin: 0px;
+        font-family: Consolas, monospace;
+      }
+        .jb-container {
+        height: 100vh;
+        background-image: linear-gradient(to bottom, red, yellow)
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .jb-item {
+        padding: 20px;
+        background-color: #ffffff;
+      }
+    </style>
 </head>
 <body>
-    <div style= "width:500px; height:500px; background-image: linear-gradient(to bottom, red, yellow); text-align:center">
-    <button onclick="redirectToAaa()">당신에게 맞는 반려 동물을 알아 보세요.</button>
+    <div class="jb-container">
+    <button type="button" class="jb-item" onclick="redirectToAaa()">당신에게 맞는 반려 동물을 알아 보세요.</button>
     </div>
     <script>
         function redirectToAaa() {
