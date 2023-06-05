@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>시작 페이지.html</title>
+    <style>
+        @import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+        
+        body {
+        padding: 0px;
+        margin: 20px;
+        height:100%;
+        width:100%;
+        font-family: 'Jeju Myeongjo', serif;
+        line-height : 30px;
+        background-color: #FBEFF2;
+        
+      }
+       
+      .highlight1{
+          background: linear-gradient(to top, #F6CED8 50%, transparent 50%);
+        }
+      
+        
+      .button {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #ffffff;
+        border: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #ffffff;
+        font-family: 'Jeju Myeongjo', serif;
+        color:#F7819F; 
+        transition:all 0.9s, color 0.3;
+      }
+       .button:hover{
+        color:#FA5882;
+        box-shadow:200px 0 0 0 rgba(245,169,188,0.5) inset;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td width="20%">
+        <h1> &nbsp 페르시안</h1>
+                </td>
+                <td width="61%">
+                    <div></div>
+                </td>
+                <td width="19%">
+                    <button class="button" onclick="redirectToAnimalSite()">당신의 반려 동물을 만나보세요.</button>
+                
+                </td>
+            </tr>
+        </table>
+    </header>                     
+    
+        <hr>
+    <nav>
+        
+        <h3>
+        <ul>
+            <li> <span class="highlight1">고양이를 선호하고</span></li>
+            <li> <span class="highlight1">활동량이 적고 차분하며</span></li>
+            <li> <span class="highlight1">중간 정도의 난이도를 원하는 당신에게</span></li>
+        </ul>
+        </h3>
+                
+    </nav>
+    <hr>
+        <article>
+        <table>
+            <tr>
+    <td width="50%"><div style= "text-align:left; width:100%; height:100%"> 
+    <ul>
+        <li><h3>설명</h3></li>
+        페르시안은 고양이의 한 품종이다. 털이 긴 고양이의 대표이다. 몸 전체에 가늘고 긴 털이 풍성하고 흰색, 검은색, 회색 등 털 색깔이 다양하다. 성격은 조용하고 울음소리가 작으며 온순한 편이다.
+      18세기 초 유럽에 처음 전해졌는데 확실한 기원이 알려져 있지 않다. 털이 길어 커 보이지만 실제로 체형은 중간 정도이며 튼튼하다.
+      대체적으로 차분한 성격이지만 특정 상황에서는 날카로운 모습을 보이기도 하여 중간 정도의 난이도로 분류한다.
+        <br>
+        <li><h3>특징</h3></li>
+        긴 털을 가진 장모종의 대표적인 품종으로 털이 가늘고 길고 풍성하다. 털에서는 부드러운 감촉과 윤기가 나는데 목과 가슴에 장식털이 많다. 털의 색깔과 무늬의 모양에 따라 페르시안고양이의 종류를 구분하는데 매우 다양하다. 코는 폭이 넓고 짧은데 일부 페르시안고양이는 코가 위로 들려있는 들창코 모양인 경우도 있다.
+        </ul>
+        </div></td>
+                <td width="7%"><div></div>
+                </td>
+         <td width="37%"><div style= "text-align:left; width:100%; height:100%"> <img src="image11.jpg" height= "400px" width="700px" alt=""> </div></td>
+                <td width="6%"><div></div>
+                </td>
+            </tr>
+            </table>
+            </article>
+        <hr>
+    <footer>
+        <table>
+            <tr>
+                <td width="30%">
+                    <button class="button" onclick="returnToTestSite()">테스트 다시 하기</button>
+        
+                </td>
+                <td width="35%">
+                    <div>
+                    </div>
+                </td>
+                <td width="35%">
+                    <p style="text-align:left">
+        페르시안, 위키백과, <a href="https://ko.wikipedia.org/wiki/%ED%8E%98%EB%A5%B4%EC%8B%9C%EC%95%88">https://ko.wikipedia.org/wiki/%ED%8E%98%EB%A5%B4%EC%8B%9C%EC%95%888 </a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        </footer>
+    
+    
+    <script>
+        function redirectToAnimalSite() {
+            window.location.href = "https://www.animal.go.kr/front/awtis/protection/protectionList.do?boardId=&page=1&pageSize=0&desertionNo=&menuNo=1000000060&searchSDate=2023-05-05&searchEDate=2023-06-05&searchUprCd=&searchOrgCd=&searchCareRegNo=&searchUpKindCd=422400&searchKindCd=00214&searchSexCd=&searchRfid=";
+        }
+        function returnToTestSite() {
+            window.location.href = "survey.html";
+        }
+    </script>
+</body>
+</html>
