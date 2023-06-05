@@ -1,0 +1,5 @@
+.my_gradient_1 {
+    background-image: linear-gradient(to bottom, red, yellow);
+    height: 100%;
+    width:100%;
+}
