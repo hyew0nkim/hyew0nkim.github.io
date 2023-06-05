@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>시작 페이지.html</title>
+    <style>
+        @import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+        
+        body {
+        padding: 0px;
+        margin: 20px;
+        height:100%;
+        width:100%;
+        font-family: 'Jeju Myeongjo', serif;
+        line-height : 30px;
+        background-color: #FBEFF2;
+        
+      }
+       
+      .highlight1{
+          background: linear-gradient(to top, #F6CED8 50%, transparent 50%);
+        }
+      
+        
+      .button {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #ffffff;
+        border: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #ffffff;
+        font-family: 'Jeju Myeongjo', serif;
+        color:#F7819F; 
+        transition:all 0.9s, color 0.3;
+      }
+       .button:hover{
+        color:#FA5882;
+        box-shadow:200px 0 0 0 rgba(245,169,188,0.5) inset;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td width="20%">
+        <h1> &nbsp 퍼그</h1>
+                </td>
+                <td width="61%">
+                    <div></div>
+                </td>
+                <td width="19%">
+                    <button class="button" onclick="redirectToAnimalSite()">당신의 반려 동물을 만나보세요.</button>
+                
+                </td>
+            </tr>
+        </table>
+    </header>                     
+    
+        <hr>
+    <nav>
+        
+        <h3>
+        <ul>
+            <li> <span class="highlight1">개를 선호하고</span></li>
+            <li> <span class="highlight1">활동량과 성향 모두 보통 정도이며</span></li>
+            <li> <span class="highlight1">중간 정도의 난이도를 원하는 당신에게</span></li>
+        </ul>
+        </h3>
+                
+    </nav>
+    <hr>
+        <article>
+        <table>
+            <tr>
+    <td width="50%"><div style= "text-align:left; width:100%; height:100%"> 
+    <ul>
+        <li><h3>설명</h3></li>
+        말티즈는 개 품종 중 하나이다. 몸무게는 2~3kg이 평균이지만 큰 종의 경우 5kg까지 된다. 
+      아름다운 모습과 온화하고 높은 지능을 지녀 애완용으로 널리 사육되었다. 평균 수명은 15년 정도로 알려져 있다.
+      적당한 활동량과 생기발랄한 성격, 중간 정도의 양육 난이도를 가지고 있다.
+        <br>
+        <li><h3>특징</h3></li>
+        작은 체구와 깨끗해 보이는 하얀 털을 가진 귀여운 외모로 한국에서 반려견으로 인기가 많은 종이다. 
+      특히 다른 견종에 비해 털빠짐이 적고, 성격적으로도 무난해서 인기가 많다. 다만 여러 질병에 취약하다는 점이 까다로운 요소 중 하나이다.
+        </ul>
+        </div></td>
+                <td width="7%"><div></div>
+                </td>
+         <td width="37%"><div style= "text-align:left; width:100%; height:100%"> <img src="image4.jpg" height= "400px" width="700px" alt=""> </div></td>
+                <td width="6%"><div></div>
+                </td>
+            </tr>
+            </table>
+            </article>
+        <hr>
+    <footer>
+        <table>
+            <tr>
+                <td width="30%">
+                    <button class="button" onclick="returnToTestSite()">테스트 다시 하기</button>
+        
+                </td>
+                <td width="35%">
+                    <div>
+                    </div>
+                </td>
+                <td width="35%">
+                    <p style="text-align:left">
+        말티즈, 위키백과, <a href="https://ko.wikipedia.org/wiki/%EB%A7%90%ED%8B%B0%EC%A6%88">https://ko.wikipedia.org/wiki/%EB%A7%90%ED%8B%B0%EC%A6%88 </a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        </footer>
+    
+    
+    <script>
+        function redirectToAnimalSite() {
+            window.location.href = "https://www.animal.go.kr/front/awtis/protection/protectionList.do?boardId=&page=1&pageSize=0&desertionNo=&menuNo=1000000060&searchSDate=2023-05-05&searchEDate=2023-06-05&searchUprCd=&searchOrgCd=&searchCareRegNo=&searchUpKindCd=417000&searchKindCd=000072&searchSexCd=&searchRfid=";
+        }
+        function returnToTestSite() {
+            window.location.href = "survey.html";
+        }
+    </script>
+</body>
+</html>
