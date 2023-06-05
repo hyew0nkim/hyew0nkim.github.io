@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>시작 페이지.html</title>
+    <style>
+        @import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+        
+        body {
+        padding: 0px;
+        margin: 20px;
+        height:100%;
+        width:100%;
+        font-family: 'Jeju Myeongjo', serif;
+        line-height : 30px;
+        background-color: #FBEFF2;
+        
+      }
+       
+      .highlight1{
+          background: linear-gradient(to top, #F6CED8 50%, transparent 50%);
+        }
+      
+        
+      .button {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #ffffff;
+        border: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #ffffff;
+        font-family: 'Jeju Myeongjo', serif;
+        color:#F7819F; 
+        transition:all 0.9s, color 0.3;
+      }
+       .button:hover{
+        color:#FA5882;
+        box-shadow:200px 0 0 0 rgba(245,169,188,0.5) inset;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td width="20%">
+        <h1> &nbsp 벵갈 (고양이)</h1>
+                </td>
+                <td width="61%">
+                    <div></div>
+                </td>
+                <td width="19%">
+                    <button class="button" onclick="redirectToAnimalSite()">당신의 반려 동물을 만나보세요.</button>
+                
+                </td>
+            </tr>
+        </table>
+    </header>                     
+    
+        <hr>
+    <nav>
+        
+        <h3>
+        <ul>
+            <li> <span class="highlight1">고양이를 선호하고</span></li>
+            <li> <span class="highlight1">매우 활발하고 외향적이며,</span></li>
+            <li> <span class="highlight1">어려운 난이도에 도전해 보고 싶은 당신에게</span></li>
+        </ul>
+        </h3>
+                
+    </nav>
+    <hr>
+        <article>
+        <table>
+            <tr>
+    <td width="50%"><div style= "text-align:left; width:100%; height:100%"> 
+    <ul>
+        <li><h3>설명</h3></li>
+        벵갈(Bengal)은 이집션 마우와 삵(Prionailurus bengalensis)의 교배종인 고양이이다. 품종명은 삵의 분류학적 이름에서 유래했다. 벵갈은 야생적인 특성이 강하며, 황금빛 빛깔은 삵 조상에서 비롯되며, 털은 반점과 장미꽃무늬, 화살촉 무늬 또는 마블링과 같은 무늬가 나타난다.
+      특유의 늘씬한 체형이 매력적이나, 야생성이 강하고 활동량이 많아 양육하기에 어려운 난이도에 속한다.
+        <br>
+        <li><h3>특징</h3></li>
+        벵갈은 다양한 색깔의 털을 가지고 있다. 국제고양이협회(TICA)는 벵갈의 다양한 색깔을 인정하고 있다. 갈색 얼룩무늬, 은색 등의 벵갈이 인정된다.
+      벵갈 고양이는 영리하고, 활기차고, 장난기가 많다. 주인들은 그들의 벵갈은 자연스럽게 물건들을 훔쳐오고, 그들은 종종 물에서 노는 것을 즐긴다고 말한다.
+        </ul>
+        </div></td>
+                <td width="7%"><div></div>
+                </td>
+         <td width="37%"><div style= "text-align:left; width:100%; height:100%"> <img src="image18.jpg" height= "400px" width="700px" alt=""> </div></td>
+                <td width="6%"><div></div>
+                </td>
+            </tr>
+            </table>
+            </article>
+        <hr>
+    <footer>
+        <table>
+            <tr>
+                <td width="30%">
+                    <button class="button" onclick="returnToTestSite()">테스트 다시 하기</button>
+        
+                </td>
+                <td width="35%">
+                    <div>
+                    </div>
+                </td>
+                <td width="35%">
+                    <p style="text-align:left">
+        벵갈 (고양이), 위키백과, <a href="https://ko.wikipedia.org/wiki/%EB%B2%B5%EA%B0%88_(%EA%B3%A0%EC%96%91%EC%9D%B4)">https://ko.wikipedia.org/wiki/%EB%B2%B5%EA%B0%88_(%EA%B3%A0%EC%96%91%EC%9D%B4)</a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        </footer>
+    
+    
+    <script>
+        function redirectToAnimalSite() {
+            window.location.href = "https://www.animal.go.kr/front/awtis/protection/protectionList.do?boardId=&page=1&pageSize=0&desertionNo=&menuNo=1000000060&searchSDate=2023-05-05&searchEDate=2023-06-05&searchUprCd=&searchOrgCd=&searchCareRegNo=&searchUpKindCd=422400&searchKindCd=000179&searchSexCd=&searchRfid=";
+        }
+        function returnToTestSite() {
+            window.location.href = "survey.html";
+        }
+    </script>
+</body>
+</html>
