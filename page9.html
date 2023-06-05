@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>시작 페이지.html</title>
+    <style>
+        @import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+        
+        body {
+        padding: 0px;
+        margin: 20px;
+        height:100%;
+        width:100%;
+        font-family: 'Jeju Myeongjo', serif;
+        line-height : 30px;
+        background-color: #FBEFF2;
+        
+      }
+       
+      .highlight1{
+          background: linear-gradient(to top, #F6CED8 50%, transparent 50%);
+        }
+      
+        
+      .button {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #ffffff;
+        border: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #ffffff;
+        font-family: 'Jeju Myeongjo', serif;
+        color:#F7819F; 
+        transition:all 0.9s, color 0.3;
+      }
+       .button:hover{
+        color:#FA5882;
+        box-shadow:200px 0 0 0 rgba(245,169,188,0.5) inset;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td width="20%">
+        <h1> &nbsp 보더 콜리</h1>
+                </td>
+                <td width="61%">
+                    <div></div>
+                </td>
+                <td width="19%">
+                    <button class="button" onclick="redirectToAnimalSite()">당신의 반려 동물을 만나보세요.</button>
+                
+                </td>
+            </tr>
+        </table>
+    </header>                     
+    
+        <hr>
+    <nav>
+        
+        <h3>
+        <ul>
+            <li> <span class="highlight1">개를 선호하고</span></li>
+            <li> <span class="highlight1">매우 활발하고 외향적이며,</span></li>
+            <li> <span class="highlight1">어려운 난이도에 도전해 보고 싶은 당신에게</span></li>
+        </ul>
+        </h3>
+                
+    </nav>
+    <hr>
+        <article>
+        <table>
+            <tr>
+    <td width="50%"><div style= "text-align:left; width:100%; height:100%"> 
+    <ul>
+        <li><h3>설명</h3></li>
+        보더 콜리는 목양견 품종으로 잉글랜드와 스코틀랜드 사이의 국경에서 가축, 특히 양을 몰기 위해 개량되었다. 
+      콜리 품종 중 가장 널리 퍼졌다. 전형적으로 탄탄한 외형에 특출하게 활동적이고 재능이 뛰어나서, 
+      프리스비 등 각종 스포츠에 뛰어나서 늘 우수한 성적으로 독 스포츠 경기와 쉽독 트라이얼(sheepdog trial)을 석권한다. 흔히들 가장 똑똑한 개라 말하곤 한다.
+      다만, 오히려 지능이 높다 보니 훈육이 중요하고, 요구되는 운동량 역시 많은 편으로 어려운 양육 난이도를 자랑한다. 
+        <br>
+        <li><h3>특징</h3></li>
+        보더 콜리 체이서(Chaser)는 1,022개의 명사를 알고 있으며 장난감을 식별할 수 있고 이름 및 카테고리별로 찾을 수 있는 동물로 세계에서 가장 영리한 개로 알려져 있다.
+      숱이 많고 속털이 깊은 편으로 엉키지 않도록 빗질을 자주 해주고 털갈이 시기에는 특히 신경을 써야 한다.
+        </ul>
+        </div></td>
+                <td width="7%"><div></div>
+                </td>
+         <td width="37%"><div style= "text-align:left; width:100%; height:100%"> <img src="image9.jpg" height= "400px" width="700px" alt=""> </div></td>
+                <td width="6%"><div></div>
+                </td>
+            </tr>
+            </table>
+            </article>
+        <hr>
+    <footer>
+        <table>
+            <tr>
+                <td width="30%">
+                    <button class="button" onclick="returnToTestSite()">테스트 다시 하기</button>
+        
+                </td>
+                <td width="35%">
+                    <div>
+                    </div>
+                </td>
+                <td width="35%">
+                    <p style="text-align:left">
+        보더 콜리, 위키백과, <a href="https://ko.wikipedia.org/wiki/%EB%B3%B4%EB%8D%94_%EC%BD%9C%EB%A6%AC">https://ko.wikipedia.org/wiki/%EB%B3%B4%EB%8D%94_%EC%BD%9C%EB%A6%AC</a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        </footer>
+    
+    
+    <script>
+        function redirectToAnimalSite() {
+            window.location.href = "https://www.animal.go.kr/front/awtis/protection/protectionList.do?boardId=&page=1&pageSize=0&desertionNo=&menuNo=1000000060&searchSDate=2023-05-05&searchEDate=2023-06-05&searchUprCd=&searchOrgCd=&searchCareRegNo=&searchUpKindCd=417000&searchKindCd=000020&searchSexCd=&searchRfid=";
+        }
+        function returnToTestSite() {
+            window.location.href = "survey.html";
+        }
+    </script>
+</body>
+</html>
