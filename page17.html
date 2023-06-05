@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>시작 페이지.html</title>
+    <style>
+        @import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+        
+        body {
+        padding: 0px;
+        margin: 20px;
+        height:100%;
+        width:100%;
+        font-family: 'Jeju Myeongjo', serif;
+        line-height : 30px;
+        background-color: #FBEFF2;
+        
+      }
+       
+      .highlight1{
+          background: linear-gradient(to top, #F6CED8 50%, transparent 50%);
+        }
+      
+        
+      .button {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #ffffff;
+        border: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #ffffff;
+        font-family: 'Jeju Myeongjo', serif;
+        color:#F7819F; 
+        transition:all 0.9s, color 0.3;
+      }
+       .button:hover{
+        color:#FA5882;
+        box-shadow:200px 0 0 0 rgba(245,169,188,0.5) inset;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td width="20%">
+        <h1> &nbsp 아비시니안</h1>
+                </td>
+                <td width="61%">
+                    <div></div>
+                </td>
+                <td width="19%">
+                    <button class="button" onclick="redirectToAnimalSite()">당신의 반려 동물을 만나보세요.</button>
+                
+                </td>
+            </tr>
+        </table>
+    </header>                     
+    
+        <hr>
+    <nav>
+        
+        <h3>
+        <ul>
+            <li> <span class="highlight1">고양이를 선호하고</span></li>
+            <li> <span class="highlight1">매우 활발하고 외향적이며</span></li>
+            <li> <span class="highlight1">중간 정도의 난이도를 원하는 당신에게</span></li>
+        </ul>
+        </h3>
+                
+    </nav>
+    <hr>
+        <article>
+        <table>
+            <tr>
+    <td width="50%"><div style= "text-align:left; width:100%; height:100%"> 
+    <ul>
+        <li><h3>설명</h3></li>
+        아비시니안(Abyssinian)은 고양이의 품종 중의 하나이다. 털의 색깔은 대부분 갈색이며, 단모종이다.
+        <br>
+        <li><h3>특징</h3></li>
+        흰백색의 털과 입 끝 부분이 살짝 올라가서 생기는 미소가 특징이다. 이중모여서 단열과 청결을 유지하기 쉽지만 씻기가 힘들다. 몸무게 15-30kg, 어깨높이 48-58cm이다. 털은 두 가지로서 속털은 조밀하고 굵으며 양털처럼 부드러우나 표면의 털은 길고 다소 뻣뻣하며 목둘레와 앞가슴의 털은 우아하다.
+        </ul>
+        </div></td>
+                <td width="7%"><div></div>
+                </td>
+         <td width="37%"><div style= "text-align:left; width:100%; height:100%"> <img src="image8.jpg" height= "400px" width="700px" alt=""> </div></td>
+                <td width="6%"><div></div>
+                </td>
+            </tr>
+            </table>
+            </article>
+        <hr>
+    <footer>
+        <table>
+            <tr>
+                <td width="30%">
+                    <button class="button" onclick="returnToTestSite()">테스트 다시 하기</button>
+        
+                </td>
+                <td width="35%">
+                    <div>
+                    </div>
+                </td>
+                <td width="35%">
+                    <p style="text-align:left">
+        사모예드견, 위키백과, <a href="https://ko.wikipedia.org/wiki/%EC%82%AC%EB%AA%A8%EC%98%88%EB%93%9C%EA%B2%AC">https://ko.wikipedia.org/wiki/%EC%82%AC%EB%AA%A8%EC%98%88%EB%93%9C%EA%B2%AC </a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        </footer>
+    
+    
+    <script>
+        function redirectToAnimalSite() {
+            window.location.href = "https://www.animal.go.kr/front/awtis/protection/protectionList.do?boardId=&page=1&pageSize=0&desertionNo=&menuNo=1000000060&searchSDate=2023-05-05&searchEDate=2023-06-05&searchUprCd=&searchOrgCd=&searchCareRegNo=&searchUpKindCd=417000&searchKindCd=000096&searchSexCd=&searchRfid=";
+        }
+        function returnToTestSite() {
+            window.location.href = "survey.html";
+        }
+    </script>
+</body>
+</html>
