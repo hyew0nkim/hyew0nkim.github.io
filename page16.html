@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>시작 페이지.html</title>
+    <style>
+        @import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+        
+        body {
+        padding: 0px;
+        margin: 20px;
+        height:100%;
+        width:100%;
+        font-family: 'Jeju Myeongjo', serif;
+        line-height : 30px;
+        background-color: #FBEFF2;
+        
+      }
+       
+      .highlight1{
+          background: linear-gradient(to top, #F6CED8 50%, transparent 50%);
+        }
+      
+        
+      .button {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #ffffff;
+        border: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #ffffff;
+        font-family: 'Jeju Myeongjo', serif;
+        color:#F7819F; 
+        transition:all 0.9s, color 0.3;
+      }
+       .button:hover{
+        color:#FA5882;
+        box-shadow:200px 0 0 0 rgba(245,169,188,0.5) inset;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td width="20%">
+        <h1> &nbsp 샴 (고양이)</h1>
+                </td>
+                <td width="61%">
+                    <div></div>
+                </td>
+                <td width="19%">
+                    <button class="button" onclick="redirectToAnimalSite()">당신의 반려 동물을 만나보세요.</button>
+                
+                </td>
+            </tr>
+        </table>
+    </header>                     
+    
+        <hr>
+    <nav>
+        
+        <h3>
+        <ul>
+            <li> <span class="highlight1">고양이를 선호하고</span></li>
+            <li> <span class="highlight1">매우 활발하고 외향적이며</span></li>
+            <li> <span class="highlight1">초보자도 키울 수 있을 정도의 난이도를 원하는 당신에게</span></li>
+        </ul>
+        </h3>
+                
+    </nav>
+    <hr>
+        <article>
+        <table>
+            <tr>
+    <td width="50%"><div style= "text-align:left; width:100%; height:100%"> 
+    <ul>
+        <li><h3>설명</h3></li>
+        샴, 샴고양이 또는 시암고양이는 고양이의 한 품종이다. 샴은 타이 왕실에서 키웠던 고양이이다. 날씬한 몸에 짧고 가는 털을 가지고 있다. 몸 색깔은 전체적으로 회색빛을 띤 흰색이며, 귀, 꼬리, 주둥이, 다리 끝은 갈색 등의 짙은색이다.
+      장난기 많은 활달한 성격과 건강한 체질로 초보자도 키우기 쉬운 난이도로 분류된다.
+        
+        <br>
+        <li><h3>특징</h3></li>
+        어릴적에는 털 색깔이 성묘 때와 완전히 다르다. 태어날 시에는 몸 전체가 하얀색이지만 한살 무렵이 되면 검은 부분이 보다 선명해지며, 점차 진한 색깔이 나타난다. 주변의 온도와 체온이 색에 영향을 주는데 주변온도가 따뜻할수록 포인트는 뚜렷해진다. 털색은 다양한 편이지만, 눈은 선명한 사파이어블루색 한 가지다. 귀는 큰 편이고 뒷다리가 앞다리보다 길다. 꼬리는 길고 끝이 가늘어서 포인트가 돋보이고 우아한 느낌을 준다. 
+      주인의 몸에 비비는 등 애정표현이 적극적이고 사랑받기를 좋아한다. 수다쟁이여서 배가고프거나 심심하면 주인에게 울어대는경우도 있다.
+        </ul>
+        </div></td>
+                <td width="7%"><div></div>
+                </td>
+         <td width="37%"><div style= "text-align:left; width:100%; height:100%"> <img src="image16.jpg" height= "400px" width="700px" alt=""> </div></td>
+                <td width="6%"><div></div>
+                </td>
+            </tr>
+            </table>
+            </article>
+        <hr>
+    <footer>
+        <table>
+            <tr>
+                <td width="30%">
+                    <button class="button" onclick="returnToTestSite()">테스트 다시 하기</button>
+        
+                </td>
+                <td width="35%">
+                    <div>
+                    </div>
+                </td>
+                <td width="35%">
+                    <p style="text-align:left">
+        샴 (고양이), 위키백과, <a href="https://ko.wikipedia.org/wiki/%EC%83%B4_(%EA%B3%A0%EC%96%91%EC%9D%B4)">https://ko.wikipedia.org/wiki/%EC%83%B4_(%EA%B3%A0%EC%96%91%EC%9D%B4) </a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        </footer>
+    
+    
+    <script>
+        function redirectToAnimalSite() {
+            window.location.href = "https://www.animal.go.kr/front/awtis/protection/protectionList.do?boardId=&page=1&pageSize=0&desertionNo=&menuNo=1000000060&searchSDate=2023-05-05&searchEDate=2023-06-05&searchUprCd=&searchOrgCd=&searchCareRegNo=&searchUpKindCd=422400&searchKindCd=000184&searchSexCd=&searchRfid=";
+        }
+        function returnToTestSite() {
+            window.location.href = "survey.html";
+        }
+    </script>
+</body>
+</html>
